@@ -44,10 +44,17 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for serice-feign" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eurekaClent" target="1.8" />
       <module name="eurekaserver" target="1.8" />
+      <module name="serice-feign" target="1.8" />
       <module name="service-ribbon" target="1.8" />
       <module name="springCouldX" target="1.5" />
     </bytecodeTargetLevel>
